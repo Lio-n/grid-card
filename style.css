@@ -31,33 +31,48 @@ body {
   max-width: 370px;
   border-radius: 20px;
   transition: transform 0.3s;
+  height: 457px;
 }
 .card:hover {
   border: springgreen solid 1px;
+  height: auto;
   transform: translateY(5px);
   box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3);
-}
-.cont-info {
-  padding: 20px;
 }
 img {
   border-radius: 20px 20px 0 0;
   width: 100%;
   height: 200px;
 }
+/*--descrip--*/
+.cont-info {
+  padding: 20px;
+}
 .title {
   margin-bottom: 10px;
   font-size: 25px;
 }
-.description {
+.descrip {
   font-size: 16px;
+}
+/*--Magic--*/
+span.longer-name {
+  display: none;
+}
+/* On hover, hide the short name */
+.card:hover span.short-name {
+  display: none;
+}
+/* On hover, display the longer name */
+.card:hover span.longer-name {
+  display: block;
 }
 .link {
   display: flex;
   justify-content: flex-end;
+  margin-top: 10px;
   font-size: 18px;
   color: rgb(72, 216, 180);
   font-weight: 600;
-  margin-top: 10px;
   text-decoration: none;
 }
