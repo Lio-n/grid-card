@@ -10,7 +10,7 @@ body {
 }
 /*--cont-grid-'Container'--*/
 .cont-grid {
-  margin: 50px 40px 50px 40px;
+  margin: 20px 40px 50px 40px;
   display: grid;
   gap: 15px;
 }
@@ -38,6 +38,16 @@ body {
   height: auto;
   transform: translateY(5px);
   box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 960px) {
+  .card {
+    height: 495px;
+  }
+}
+@media (min-width: 1050px) {
+  .card {
+    height: 457px;
+  }
 }
 img {
   border-radius: 20px 20px 0 0;
